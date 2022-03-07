@@ -1,4 +1,3 @@
-/* hello.c */
 #include <stdio.h>
 #include <string.h>
 
@@ -10,22 +9,15 @@ void main (void)
   char buff[2];
   fgets(buff, 2, stdin);
 
-  char str[100];
-  int count = 0;
+  char str[1000]="i have to believe that even if  something seems like it cannot be fixed it doesn't mean it's broken ";
   
-  while(1)
-  {
-    fgets(str, 100, stdin);
+  int count = 0;
     
-    if(strcmp(str, "exit\n") == 0)
-      break;
-      
-    for(int i=0; i < strlen(str);i++)
+  for(int i=0; i < strlen(str);i++)
+  {
+    if(str[i] == letter)
     {
-      if(str[i] == letter)
-      {
-        count++;
-      }
+      count++;
     }
   }
   
